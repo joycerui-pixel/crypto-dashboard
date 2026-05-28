@@ -15,7 +15,7 @@ body{background:var(--bg);color:var(--text);font-family:'JetBrains Mono',monospa
 .logo i{width:42px;height:42px;background:linear-gradient(135deg,var(--accent),#2563eb);border-radius:10px;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:18px;font-weight:700;color:#fff}
 .logo b{font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:700}
 .logo b span{color:var(--accent)}
-.hdr-r{display:flex;align-items:center;gap:18px}
+.hdr-r{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
 .dot{width:8px;height:8px;background:var(--accent);border-radius:50%;animation:p 2s infinite}
 @keyframes p{0%,100%{opacity:1}50%{opacity:.3}}
 .btn{background:var(--accent);border:none;color:#fff;padding:8px 18px;border-radius:7px;font-family:inherit;font-size:12px;font-weight:600;cursor:pointer;transition:.2s;text-transform:uppercase}
@@ -44,35 +44,25 @@ tbody tr{border-bottom:1px solid #eef0f5;transition:.15s}
 tbody tr:hover{background:#eef1f8}
 td{padding:12px 14px;font-size:13px;white-space:nowrap}
 .rk{color:var(--muted);font-weight:600}
-.ai{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;overflow:hidden}
+.ai{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;overflow:hidden;background:#eef0f5;color:var(--dim)}
 .ai img{width:100%;height:100%;border-radius:50%}
 .an{font-weight:600;font-size:14px}.ap{font-size:10px;color:var(--dim)}
 .pr{font-weight:600}
 .ch{font-weight:700;padding:3px 9px;border-radius:5px;font-size:12px;display:inline-block}
 .ch.up{color:#0a8f56;background:#e6f9f0}.ch.dn{color:#c43040;background:#fde8eb}
-.fn{font-weight:600}.fn.pos{color:var(--accent)}.fn.neg{color:var(--red)}
-.ob{display:flex;align-items:center;gap:8px}
-.of{height:5px;border-radius:3px;width:65px;background:#fde8eb;position:relative;overflow:hidden}
-.of .l{position:absolute;left:0;top:0;bottom:0;background:var(--accent);border-radius:3px}
-.ol{font-size:10px;color:var(--dim);min-width:36px}
 .ts{max-height:600px;overflow-y:auto}
-.xg{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;opacity:0;animation:fu .6s ease forwards;animation-delay:.33s}
+.xg{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .xc{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:18px 20px;display:grid;grid-template-columns:36px 1fr auto;align-items:center;gap:14px;transition:.2s;box-shadow:var(--sh)}
 .xc:hover{box-shadow:0 4px 12px rgba(0,0,0,.08);transform:translateY(-1px)}
-.xr{width:34px;height:34px;border-radius:9px;background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--dim);border:1px solid var(--border);overflow:hidden}
+.xr{width:34px;height:34px;border-radius:9px;background:#eef0f5;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--dim);border:1px solid var(--border);overflow:hidden}
 .xr img{width:100%;height:100%;border-radius:9px}
-.xt{display:flex;align-items:center;gap:8px;margin-bottom:8px}
-.xn{font-weight:600;font-size:14px}.xtp{font-size:10px;color:var(--dim);margin-left:6px;font-weight:600}
-.xbc{display:flex;align-items:center;gap:10px}
-.xb{flex:1;height:9px;border-radius:5px;overflow:hidden;background:#eef0f5;position:relative}
-.xb .sf{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,var(--accent),#34d399);border-radius:5px 0 0 5px}
-.xb .ff{position:absolute;top:0;bottom:0;background:linear-gradient(90deg,var(--blue),#818cf8);border-radius:0 5px 5px 0}
-.xlg{display:flex;gap:12px;font-size:10px}.xlg span{display:flex;align-items:center;gap:4px}
-.xlg .d{width:7px;height:7px;border-radius:50%}
-.xv{text-align:right;min-width:100px}
+.xn{font-weight:600;font-size:14px}
+.xv{text-align:right;min-width:110px}
 .xvt{font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:700}
-.xvl{font-size:10px;color:var(--dim)}.xvb{font-size:10px;color:var(--muted);margin-top:2px}
-.il{display:flex;flex-direction:column;gap:10px;opacity:0;animation:fu .6s ease forwards;animation-delay:.4s}
+.xvl{font-size:10px;color:var(--dim)}
+.xtp{font-size:10px;color:var(--dim);margin-left:6px;font-weight:600}
+.xinfo{font-size:11px;color:var(--muted);margin-top:2px}
+.il{display:flex;flex-direction:column;gap:10px}
 .ir{display:grid;grid-template-columns:80px 1fr 120px 110px 100px;align-items:center;gap:14px;background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:16px 20px;transition:.2s;cursor:pointer;box-shadow:var(--sh);position:relative}
 .ir:hover{box-shadow:0 4px 12px rgba(0,0,0,.08);transform:translateY(-1px);border-color:var(--red)}
 .ir .ch3{position:absolute;right:14px;bottom:6px;font-size:9px;color:var(--muted);opacity:0;transition:.2s}
@@ -87,6 +77,7 @@ td{padding:12px 14px;font-size:13px;white-space:nowrap}
 .loading span{display:inline-block;width:8px;height:8px;background:var(--accent);border-radius:50%;margin:0 4px;animation:bounce .6s infinite alternate}
 .loading span:nth-child(2){animation-delay:.2s}.loading span:nth-child(3){animation-delay:.4s}
 @keyframes bounce{to{transform:translateY(-8px);opacity:.4}}
+.err{padding:20px;color:var(--red);text-align:center;font-size:13px;background:#fde8eb;border-radius:10px;margin:10px 0}
 .mo{position:fixed;inset:0;z-index:10000;background:rgba(15,18,30,.45);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;opacity:0;transition:.3s}
 .mo.v{display:flex;opacity:1}
 .mp{background:var(--panel);border:1px solid var(--border);border-radius:18px;width:90%;max-width:780px;max-height:85vh;overflow-y:auto;transform:translateY(20px) scale(.97);transition:transform .35s cubic-bezier(.16,1,.3,1);box-shadow:0 30px 90px rgba(0,0,0,.18)}
@@ -107,11 +98,25 @@ td{padding:12px 14px;font-size:13px;white-space:nowrap}
 .mi{background:var(--bg);border:1px solid var(--border);border-radius:9px;padding:14px}
 .mi .lb{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
 .mi .vl{font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700}
+.tml{position:relative;padding-left:22px}
+.tml::before{content:'';position:absolute;left:5px;top:4px;bottom:4px;width:2px;background:var(--border);border-radius:1px}
+.ti{position:relative;margin-bottom:14px}.ti:last-child{margin-bottom:0}
+.ti::before{content:'';position:absolute;left:-19px;top:6px;width:9px;height:9px;border-radius:50%;border:2px solid var(--panel);box-shadow:0 0 0 2px #0fa96818}
+.ti.rd::before{background:var(--red);box-shadow:0 0 0 2px #e53e5115}
+.ti.gr::before{background:var(--accent)}
+.tl-tm{font-size:10px;color:var(--muted);margin-bottom:2px}
+.tl-tx{font-size:13px;line-height:1.55}
+.mtags{display:flex;flex-wrap:wrap;gap:7px;margin-top:6px}
+.mtag{background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:5px 12px;font-size:12px;font-weight:500}
+.lb-tbl{width:100%;border-collapse:collapse;margin-top:6px}
+.lb-tbl th{text-align:left;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--dim);padding:7px 11px;border-bottom:2px solid var(--border);background:#f6f7fb}
+.lb-tbl td{padding:9px 11px;font-size:12px;border-bottom:1px solid #eef0f5}
+.la{color:var(--red);font-weight:700;font-family:'Space Grotesk',sans-serif}
 .cl{list-style:none;padding:0}.cl li{padding:7px 0 7px 22px;font-size:13px;line-height:1.6;position:relative;border-bottom:1px solid #eef0f5}.cl li:last-child{border-bottom:none}.cl li::before{content:'→';position:absolute;left:0;color:var(--red);font-weight:700}
 .rl{list-style:none;padding:0}.rl li{padding:7px 0 7px 22px;font-size:13px;line-height:1.6;position:relative;border-bottom:1px solid #eef0f5}.rl li:last-child{border-bottom:none}.rl li::before{content:'✓';position:absolute;left:0;color:var(--accent);font-weight:700}
 .stb{display:inline-block;font-size:10px;font-weight:700;padding:3px 10px;border-radius:5px;text-transform:uppercase;letter-spacing:.5px}
 .stb.ongoing{background:#fde8eb;color:var(--red)}.stb.mitigated{background:#fef7e6;color:var(--yellow)}.stb.resolved{background:#e6f9f0;color:var(--accent)}
-.source-tag{font-size:10px;color:var(--muted);background:var(--bg);padding:3px 8px;border-radius:4px;border:1px solid var(--border)}
+.src-tag{font-size:10px;color:var(--muted);background:var(--bg);padding:3px 8px;border-radius:4px;border:1px solid var(--border)}
 @keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
 ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:#cdd3e0;border-radius:3px}
 @media(max-width:1200px){.stats{grid-template-columns:repeat(2,1fr)}.xg{grid-template-columns:1fr}.ir{grid-template-columns:70px 1fr 100px 80px}.ic{display:none}.mg{grid-template-columns:repeat(2,1fr)}}
@@ -122,23 +127,24 @@ td{padding:12px 14px;font-size:13px;white-space:nowrap}
 <div class="app">
 <div class="hdr">
 <div class="logo"><i>CS</i><b>Crypto<span>Scope</span></b></div>
-<div class="hdr-r"><span class="source-tag" id="srcTag">📡 Data: CoinGecko</span><div style="display:flex;align-items:center;gap:8px"><div class="dot"></div><span style="font-size:12px;color:var(--dim)" id="clock">--:--:--</span></div><button class="btn" id="refreshBtn" onclick="loadAll()">⟳ Refresh</button></div>
+<div class="hdr-r"><span class="src-tag" id="srcTag">📡 CoinCap API</span><div style="display:flex;align-items:center;gap:8px"><div class="dot"></div><span style="font-size:12px;color:var(--dim)" id="clock">--:--:--</span></div><button class="btn" id="rBtn" onclick="loadAll()">⟳ Refresh</button></div>
 </div>
+
 <div class="stats">
 <div class="sc"><div class="sl">Total Market Cap</div><div class="sv" id="s1">...</div><div class="ss" id="s1s">loading</div></div>
 <div class="sc"><div class="sl">24h Volume</div><div class="sv" id="s2">...</div><div class="ss" id="s2s">loading</div></div>
 <div class="sc"><div class="sl">BTC Dominance</div><div class="sv" id="s3">...</div><div class="ss" id="s3s">loading</div></div>
-<div class="sc"><div class="sl">Active Coins</div><div class="sv" id="s4">...</div><div class="ss" id="s4s">loading</div></div>
+<div class="sc"><div class="sl">Active Exchanges</div><div class="sv" id="s4">...</div><div class="ss" id="s4s">loading</div></div>
 </div>
 
-<div class="st"><div class="si" style="background:#e6f9f0;color:var(--accent)">📊</div>Top 30 Assets — Live from CoinGecko<span class="sb" style="background:#e6f9f0;color:var(--accent)">LIVE API</span></div>
-<div class="tw"><div class="th"><div style="font-size:14px;font-weight:600">💰 Real-Time Market Data</div><input class="sb2" placeholder="Search token..." oninput="ft(this.value)"></div><div class="ts" id="tableWrap"><div class="loading"><span></span><span></span><span></span> Loading live data...</div></div></div>
+<div class="st"><div class="si" style="background:#e6f9f0;color:var(--accent)">📊</div>Top 30 Assets<span class="sb" style="background:#e6f9f0;color:var(--accent)">LIVE</span></div>
+<div class="tw"><div class="th"><div style="font-size:14px;font-weight:600">💰 Market Data</div><input class="sb2" placeholder="Search token..." oninput="ft(this.value)"></div><div class="ts" id="coinWrap"><div class="loading"><span></span><span></span><span></span> Loading live data...</div></div></div>
 
-<div class="st"><div class="si" style="background:#eff4ff;color:var(--blue)">🏦</div>Top 30 Exchanges — Live<span class="sb" style="background:#eff4ff;color:var(--blue)">LIVE API</span></div>
-<div id="exWrap"><div class="loading"><span></span><span></span><span></span> Loading exchange data...</div></div>
-<div class="xg" id="xg" style="display:none"></div>
+<div class="st"><div class="si" style="background:#eff4ff;color:var(--blue)">🏦</div>Top 30 Exchanges<span class="sb" style="background:#eff4ff;color:var(--blue)">LIVE</span></div>
+<div id="exWrap"><div class="loading"><span></span><span></span><span></span> Loading exchanges...</div></div>
+<div class="xg" id="xg"></div>
 
-<div class="st"><div class="si" style="background:#fef7e6;color:var(--yellow)">🛡️</div>Web3 Security Incidents<span class="sb" style="background:#fef7e6;color:var(--yellow)">CURATED</span></div>
+<div class="st"><div class="si" style="background:#fef7e6;color:var(--yellow)">🛡️</div>Web3 Wallet Security Incidents<span class="sb" style="background:#fef7e6;color:var(--yellow)">REAL DATA</span></div>
 <div class="il" id="il"></div>
 </div>
 
@@ -148,90 +154,110 @@ td{padding:12px 14px;font-size:13px;white-space:nowrap}
 function ck(){document.getElementById('clock').textContent=new Date().toUTCString().slice(17,25)+' UTC'}
 setInterval(ck,1000);ck();
 
-function fmt(n){if(n>=1e12)return'$'+(n/1e12).toFixed(2)+'T';if(n>=1e9)return'$'+(n/1e9).toFixed(2)+'B';if(n>=1e6)return'$'+(n/1e6).toFixed(2)+'M';return'$'+n.toLocaleString()}
-function fmtP(n){return n==null?'N/A':(n>=0?'+':'')+n.toFixed(2)+'%'}
-function fmtPr(n){if(n>=1)return'$'+n.toLocaleString('en',{minimumFractionDigits:2,maximumFractionDigits:2});if(n>=0.01)return'$'+n.toFixed(4);if(n>=0.0001)return'$'+n.toFixed(6);return'$'+n.toFixed(8)}
+function fmt(n){if(!n&&n!==0)return'N/A';n=Number(n);if(n>=1e12)return'$'+(n/1e12).toFixed(2)+'T';if(n>=1e9)return'$'+(n/1e9).toFixed(2)+'B';if(n>=1e6)return'$'+(n/1e6).toFixed(2)+'M';if(n>=1e3)return'$'+(n/1e3).toFixed(1)+'K';return'$'+n.toFixed(2)}
+function fmtP(n){if(!n&&n!==0)return'N/A';n=Number(n);return(n>=0?'+':'')+n.toFixed(2)+'%'}
+function fmtPr(n){if(!n&&n!==0)return'N/A';n=Number(n);if(n>=1)return'$'+n.toLocaleString('en',{minimumFractionDigits:2,maximumFractionDigits:2});if(n>=0.01)return'$'+n.toFixed(4);if(n>=0.0001)return'$'+n.toFixed(6);return'$'+n.toFixed(8)}
 
-// ── REAL API: Global Stats ──
-async function loadGlobal(){
-  try{
-    const r=await fetch('https://api.coingecko.com/api/v3/global');
-    const d=(await r.json()).data;
-    document.getElementById('s1').textContent=fmt(d.total_market_cap.usd);
-    document.getElementById('s1s').innerHTML=(d.market_cap_change_percentage_24h_usd>=0?'▲ ':'▼ ')+Math.abs(d.market_cap_change_percentage_24h_usd).toFixed(1)+'% (24h)';
-    document.getElementById('s1s').className='ss '+(d.market_cap_change_percentage_24h_usd>=0?'up':'dn');
-    document.getElementById('s2').textContent=fmt(d.total_volume.usd);
-    document.getElementById('s2s').innerHTML='24h Trading Volume';
-    document.getElementById('s2s').className='ss';
-    document.getElementById('s3').textContent=d.market_cap_percentage.btc.toFixed(1)+'%';
-    document.getElementById('s3s').innerHTML=(d.market_cap_percentage.eth!==undefined?'ETH: '+d.market_cap_percentage.eth.toFixed(1)+'%':'');
-    document.getElementById('s3s').className='ss up';
-    document.getElementById('s4').textContent=d.active_cryptocurrencies.toLocaleString();
-    document.getElementById('s4s').innerHTML='Markets: '+d.markets;
-    document.getElementById('s4s').className='ss';
-  }catch(e){console.error('Global API error:',e)}
-}
+var coinCache=[];
 
-// ── REAL API: Top 30 Coins ──
+// ── CoinCap API: Top 30 ──
 async function loadCoins(){
   try{
-    const r=await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=30&page=1&sparkline=false&price_change_percentage=24h,7d');
-    const data=await r.json();
-    const b=document.getElementById('tableWrap');
-    let html='<table><thead><tr><th>#</th><th>Asset</th><th class=r>Price</th><th class=r>24h%</th><th class=r>7d%</th><th class=r>Vol</th><th class=r>Mcap</th></tr></thead><tbody>';
-    data.forEach((x,i)=>{
-      const c24=x.price_change_percentage_24h_in_currency||0;
-      const c7d=x.price_change_percentage_7d_in_currency||0;
-      const c24c=c24>=0?'up':'dn',c7dc=c7d>=0?'up':'dn';
-      html+='<tr><td class=rk>'+(i+1)+'</td><td><div style="display:flex;align-items:center;gap:10px"><div class=ai><img src="'+x.image+'" alt=""></div><div style="display:flex;flex-direction:column"><span class=an>'+x.name+'</span><span class=ap>'+x.symbol.toUpperCase()+'/USDT</span></div></div></td><td class="r pr">'+fmtPr(x.current_price)+'</td><td class=r><span class="ch '+c24c+'">'+fmtP(c24)+'</span></td><td class=r><span class="ch '+c7dc+'">'+fmtP(c7d)+'</span></td><td class="r" style="color:var(--dim)">'+fmt(x.total_volume)+'</td><td class="r" style="font-weight:600">'+fmt(x.market_cap)+'</td></tr>';
-    });
-    html+='</tbody></table>';
-    b.innerHTML=html;
+    var r=await fetch('https://api.coincap.io/v2/assets?limit=30');
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    var j=await r.json();
+    coinCache=j.data;
+    renderCoins(j.data);
   }catch(e){
-    console.error('Coins API error:',e);
-    document.getElementById('tableWrap').innerHTML='<div style="padding:20px;color:var(--red);text-align:center">Failed to load coin data. API rate limit? Try again in 30s.</div>';
+    console.error('Coin API error:',e);
+    document.getElementById('coinWrap').innerHTML='<div class=err>Failed to load coin data: '+e.message+'<br>CoinCap may be rate-limited. Try again in 30 seconds.</div>';
   }
 }
 
-// ── REAL API: Top 30 Exchanges ──
+function renderCoins(data){
+  var b=document.getElementById('coinWrap');
+  var html='<table><thead><tr><th>#</th><th>Asset</th><th class=r>Price</th><th class=r>24h%</th><th class=r>Supply</th><th class=r>Vol 24h</th><th class=r>Market Cap</th></tr></thead><tbody>';
+  data.forEach(function(x){
+    var c24=Number(x.changePercent24Hr)||0;
+    var c=c24>=0?'up':'dn';
+    var sym=x.symbol.toLowerCase();
+    var icon='https://assets.coincap.io/assets/icons/'+sym+'@2x.png';
+    var sup=x.supply?Number(x.supply).toLocaleString('en',{maximumFractionDigits:0}):'N/A';
+    html+='<tr><td class=rk>'+x.rank+'</td><td><div style="display:flex;align-items:center;gap:10px"><div class=ai><img src="'+icon+'" onerror="this.style.display=\'none\'" alt=""></div><div style="display:flex;flex-direction:column"><span class=an>'+x.name+'</span><span class=ap>'+x.symbol+'/USDT</span></div></div></td><td class="r pr">'+fmtPr(x.priceUsd)+'</td><td class=r><span class="ch '+c+'">'+fmtP(c24)+'</span></td><td class="r" style="color:var(--dim);font-size:12px">'+sup+'</td><td class="r" style="color:var(--dim)">'+fmt(x.volumeUsd24Hr)+'</td><td class="r" style="font-weight:600">'+fmt(x.marketCapUsd)+'</td></tr>';
+  });
+  html+='</tbody></table>';
+  b.innerHTML=html;
+}
+
+// ── CoinCap API: Global ──
+async function loadGlobal(){
+  try{
+    var r=await fetch('https://api.coincap.io/v2/assets?limit=30');
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    var j=await r.json();
+    var data=j.data;
+    var totalMcap=0,totalVol=0,btcMcap=0;
+    data.forEach(function(x){
+      totalMcap+=Number(x.marketCapUsd)||0;
+      totalVol+=Number(x.volumeUsd24Hr)||0;
+      if(x.symbol==='BTC')btcMcap=Number(x.marketCapUsd)||0;
+    });
+    document.getElementById('s1').textContent=fmt(totalMcap);
+    document.getElementById('s1s').innerHTML='Top 30 Combined';
+    document.getElementById('s1s').className='ss up';
+    document.getElementById('s2').textContent=fmt(totalVol);
+    document.getElementById('s2s').innerHTML='24h Trading Volume';
+    document.getElementById('s2s').className='ss';
+    var dom=totalMcap>0?(btcMcap/totalMcap*100).toFixed(1):'N/A';
+    document.getElementById('s3').textContent=dom+'%';
+    document.getElementById('s3s').innerHTML='of Top 30';
+    document.getElementById('s3s').className='ss up';
+  }catch(e){
+    console.error('Global error:',e);
+  }
+}
+
+// ── CoinCap API: Exchanges ──
 async function loadExchanges(){
   try{
-    const r=await fetch('https://api.coingecko.com/api/v3/exchanges?per_page=30&page=1');
-    const data=await r.json();
-    const g=document.getElementById('xg');
-    document.getElementById('exWrap').style.display='none';
-    g.style.display='grid';
+    var r=await fetch('https://api.coincap.io/v2/exchanges?limit=30');
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    var j=await r.json();
+    document.getElementById('exWrap').innerHTML='';
+    var g=document.getElementById('xg');
     g.innerHTML='';
-    data.forEach((x,i)=>{
-      const c=document.createElement('div');c.className='xc';
-      const spotPct=Math.round(Math.random()*40+50);
-      const futPct=100-spotPct;
-      c.innerHTML='<div class=xr><img src="'+x.image+'" alt=""></div><div><div class=xt><span class=xn>'+x.name+'</span><span class=xtp style="color:var(--blue)">[CEX]</span></div><div class=xbc><div class=xb><div class=sf style="width:'+spotPct+'%"></div><div class=ff style="left:'+spotPct+'%;width:'+futPct+'%"></div></div><div class=xlg><span><span class=d style="background:var(--accent)"></span>Spot ~'+spotPct+'%</span><span><span class=d style="background:var(--blue)"></span>Fut ~'+futPct+'%</span></div></div></div><div class=xv><div class=xvt>'+fmt(x.trade_volume_24h_btc)+' BTC</div><div class=xvl>24h Vol</div><div class=xvb>Trust: '+(x.trust_score||0)+'/10</div></div>';
+    document.getElementById('s4').textContent=j.data.length;
+    document.getElementById('s4s').innerHTML='Tracked by CoinCap';
+    document.getElementById('s4s').className='ss';
+    j.data.forEach(function(x,i){
+      var c=document.createElement('div');c.className='xc';
+      var volBtc=Number(x.volumeUsd24Hr)||0;
+      var sym=x.name.toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,4);
+      c.innerHTML='<div class=xr>'+(i+1)+'</div><div><div style="display:flex;align-items:center;gap:8px;margin-bottom:4px"><span class=xn>'+x.name+'</span><span class=xtp style="color:var(--blue)">[CEX]</span></div><div class=xinfo>Pairs: '+(x.tradingPairs||'N/A')+' | Socket: '+(x.socket?'Yes':'No')+'</div></div><div class=xv><div class=xvt>'+fmt(volBtc)+'</div><div class=xvl>24h Volume (USD)</div></div>';
       g.appendChild(c);
     });
   }catch(e){
-    console.error('Exchanges API error:',e);
-    document.getElementById('exWrap').innerHTML='<div style="padding:20px;color:var(--red);text-align:center">Failed to load exchange data.</div>';
+    console.error('Exchange API error:',e);
+    document.getElementById('exWrap').innerHTML='<div class=err>Failed to load exchange data: '+e.message+'</div>';
   }
 }
 
-// ── SECURITY INCIDENTS (Real curated data) ──
+// ── Security Incidents ──
 var IN=[
 {sv:'critical',ti:'Bybit Cold Wallet Safe{Wallet} Attack',ds:'Malicious JS injected into Safe{Wallet} frontend, $1.44B stolen from multi-sig wallet',ls:'$1.44B',ch:'Ethereum',tm:'2025-02-21',
 dt:{ov:'On Feb 21, 2025, attackers compromised Safe{Wallet} AWS S3 bucket, injecting malicious JavaScript that tampered with multi-sig transactions, stealing ~$1.44B in ETH from Bybit cold wallet — the largest crypto hack in history.',st:'mitigated',rc:['AWS S3 bucket compromise in Safe{Wallet} infrastructure','Malicious JS tampered with transaction content during signing','Activation only triggered when source matched Bybit contract','Malicious code injected 2 days before attack (Feb 19)','Attacker replaced clean JS 2 minutes after attack to destroy evidence'],tl:[{t:'Feb 19',x:'Malicious JS injected into Safe AWS S3',tp:'rd'},{t:'Feb 21 14:15 UTC',x:'$1.44B ETH stolen from Bybit multi-sig cold wallet',tp:'rd'},{t:'Feb 21 14:17',x:'Attacker uploads clean JS to destroy evidence',tp:'rd'},{t:'Feb 21 15:00',x:'Bybit detects anomaly, emergency response begins',tp:'gr'},{t:'Feb 26',x:'Sygnia forensic report confirms Safe infrastructure compromise',tp:'gr'}],lo:[{a:'Attacker wallet',m:'$1.44B',tk:'ETH + stETH/mETH'}],rm:['9 security audits completed','MPC + HSM integration','ISO/IEC 27001 certified','LazarusBounty: >$2.3M paid to trace stolen funds'],aa:['ETH','stETH','mETH','WBTC'],av:'AWS S3 Supply Chain Attack → JS Injection → Multi-sig Tampering',fr:'Bybit covered all losses with own reserves',pr:'Sygnia forensic investigation, Lazarus Group suspected'},
 
-{sv:'critical',ti:'Ethereum Address Poisoning Epidemic',ds:'270M attack attempts targeting 17M victims, $100M+ cumulative losses from lookalike address scams',ls:'$100M+',ch:'Ethereum / BSC',tm:'2025 ongoing',
-dt:{ov:'Address poisoning is an emerging phishing attack where scammers generate lookalike addresses matching victims transaction history, then contaminate records with small transfers. Study shows 270M attempts on Ethereum/BSC targeting 17M victims.',st:'ongoing',rc:['Ethereum addresses are 40-char hex strings users cannot memorize','Attackers use GPUs to mass-generate similar prefix/suffix addresses','270M attack attempts detected over 2-year period','Only 3 out of 53 wallets provide transfer warnings','Most wallets rely on transaction activity providers with varying detection'],tl:[{t:'Ongoing',x:'Attackers mass-generate similar addresses via GPU',tp:'rd'},{t:'Ongoing',x:'Small transfers poison victims transaction history',tp:'rd'},{t:'Research period',x:'270M attempts, 6633 caused real losses',tp:'rd'},{t:'2025',x:'Only 3/53 wallets have clear warnings',tp:'gr'},{t:'2025',x:'Wallet devs developing mitigation solutions',tp:'gr'}],lo:[{a:'17M targeted users',m:'$100M+',tk:'ETH, USDC, USDT, ERC-20s'}],rm:['Always verify full 40-char address before transfer','Use ENS domains instead of hex addresses','Use wallets with address poisoning detection','Enable whitelist-only transfer feature'],aa:['ETH','USDC','USDT'],av:'Address Poisoning → Lookalike Generation → History Contamination',fr:'Most funds unrecoverable due to pseudonymity',pr:'Researcher reports submitted to wallet developers'},
+{sv:'critical',ti:'Ethereum Address Poisoning Epidemic',ds:'270M attack attempts targeting 17M victims, $100M+ cumulative losses',ls:'$100M+',ch:'Ethereum / BSC',tm:'2025 ongoing',
+dt:{ov:'Address poisoning is an emerging phishing attack where scammers generate lookalike addresses matching victims transaction history. Study shows 270M attempts on Ethereum/BSC targeting 17M victims with only 3/53 wallets providing warnings.',st:'ongoing',rc:['Ethereum addresses are 40-char hex strings users cannot memorize','Attackers use GPUs to mass-generate similar prefix/suffix addresses','270M attack attempts detected over 2-year period','Only 3 out of 53 wallets provide transfer warnings','Most wallets rely on transaction activity providers with varying detection'],tl:[{t:'Ongoing',x:'Attackers mass-generate similar addresses via GPU',tp:'rd'},{t:'Ongoing',x:'Small transfers poison victims transaction history',tp:'rd'},{t:'Research period',x:'270M attempts, 6633 caused real losses',tp:'rd'},{t:'2025',x:'Only 3/53 wallets have clear warnings',tp:'gr'},{t:'2025',x:'Wallet devs developing mitigation solutions',tp:'gr'}],lo:[{a:'17M targeted users',m:'$100M+',tk:'ETH, USDC, USDT, ERC-20s'}],rm:['Always verify full 40-char address before transfer','Use ENS domains instead of hex addresses','Use wallets with address poisoning detection','Enable whitelist-only transfer feature'],aa:['ETH','USDC','USDT'],av:'Address Poisoning → Lookalike Generation → History Contamination',fr:'Most funds unrecoverable due to pseudonymity',pr:'Researcher reports submitted to wallet developers'},
 
-{sv:'high',ti:'LI.FI Cross-Chain Bridge Exploit',ds:'Smart contract upgrade error allowed unauthorized access to 153 wallets',ls:'$11.6M',ch:'Multi-Chain',tm:'2024-07-19',
-dt:{ov:'LI.FI cross-chain bridge was exploited shortly after a new smart contract deployment. The vulnerability allowed attackers to gain unauthorized access to user wallets within minutes due to missing validation checks during the upgrade.',st:'resolved',rc:['Human error during smart contract update','Missing caller validation in upgraded contract','Contract callers could invoke any contract without verification','Exploited within minutes of deployment'],tl:[{t:'Minutes post-deploy',x:'Exploiter gains unauthorized wallet access',tp:'rd'},{t:'Quick detection',x:'LI.FI security team detects vulnerability',tp:'rd'},{t:'Immediate',x:'Incident response activated, error code disabled',tp:'gr'},{t:'Aftermath',x:'Collaboration with law enforcement and security firms',tp:'gr'}],lo:[{a:'153 wallets affected',m:'$11.6M',tk:'USDC, USDT, DAI'}],rm:['Disabled vulnerable code immediately','Collaborated with law enforcement for fund recovery','Strengthened pre-deployment verification processes','Recommended stricter security audits for cross-chain bridges'],aa:['USDC','USDT','DAI'],av:'Contract Upgrade Error → Missing Validation → Unauthorized Access',fr:'Ongoing recovery efforts',pr:'Law enforcement engaged'},
+{sv:'high',ti:'LI.FI Cross-Chain Bridge Exploit',ds:'Smart contract upgrade error allowed unauthorized access to 153 wallets, $11.6M lost',ls:'$11.6M',ch:'Multi-Chain',tm:'2024-07-19',
+dt:{ov:'LI.FI cross-chain bridge was exploited shortly after a new smart contract deployment due to missing validation checks. Attackers gained unauthorized access to 153 user wallets within minutes.',st:'resolved',rc:['Human error during smart contract update','Missing caller validation in upgraded contract','Contract callers could invoke any contract without verification','Exploited within minutes of deployment'],tl:[{t:'Minutes post-deploy',x:'Exploiter gains unauthorized wallet access',tp:'rd'},{t:'Quick detection',x:'LI.FI security team detects vulnerability',tp:'rd'},{t:'Immediate',x:'Error code disabled, incident response activated',tp:'gr'},{t:'Aftermath',x:'Collaboration with law enforcement and security firms',tp:'gr'}],lo:[{a:'153 wallets',m:'$11.6M',tk:'USDC, USDT, DAI'}],rm:['Disabled vulnerable code immediately','Strengthened pre-deployment verification','Recommended stricter security audits for bridges'],aa:['USDC','USDT','DAI'],av:'Contract Upgrade Error → Missing Validation → Unauthorized Access',fr:'Ongoing recovery efforts',pr:'Law enforcement engaged'},
 
-{sv:'high',ti:'CoinEx Hot Wallet Key Compromise',ds:'Private key leak led to $70M theft, suspected Lazarus Group (DPRK)',ls:'$70M',ch:'Multi-Chain',tm:'2023-09-12',
-dt:{ov:'CoinEx exchange suffered a $70M loss due to hot wallet private key compromise. SlowMist security team analysis linked the attack to North Koreas Lazarus Group. Attackers moved assets across multiple chains.',st:'resolved',rc:['Hot wallet private key compromise','Attributed to DPRK Lazarus Group by SlowMist','Insufficient hot wallet key management','Multi-chain assets affected simultaneously'],tl:[{t:'Attack day',x:'Attacker uses leaked key to drain multi-chain assets',tp:'rd'},{t:'Detection',x:'CoinEx detects abnormal transactions',tp:'rd'},{t:'Response',x:'Deposits/withdrawals suspended, emergency response',tp:'gr'},{t:'Aftermath',x:'SlowMist confirms Lazarus Group attribution',tp:'gr'}],lo:[{a:'CoinEx hot wallets',m:'$70M',tk:'Multi-chain assets'}],rm:['Store majority assets in cold wallets','Use HSM for hot wallet key management','Implement multi-sig to prevent single-point key compromise','Regular key rotation and security audits'],aa:['ETH','BTC','TRX'],av:'Private Key Compromise → Multi-chain Asset Theft',fr:'Partial funds traced and frozen',pr:'SlowMist confirmed Lazarus Group attribution, law enforcement engaged'},
+{sv:'high',ti:'CoinEx Hot Wallet Key Compromise',ds:'Private key leak led to $70M theft, attributed to Lazarus Group (DPRK)',ls:'$70M',ch:'Multi-Chain',tm:'2023-09-12',
+dt:{ov:'CoinEx exchange suffered $70M loss from hot wallet private key compromise. SlowMist attributed the attack to North Korea Lazarus Group with multi-chain asset theft.',st:'resolved',rc:['Hot wallet private key compromise','Attributed to DPRK Lazarus Group','Insufficient key management','Multi-chain assets affected simultaneously'],tl:[{t:'Attack day',x:'Attacker uses leaked key to drain multi-chain assets',tp:'rd'},{t:'Detection',x:'CoinEx detects abnormal transactions',tp:'rd'},{t:'Response',x:'Deposits/withdrawals suspended',tp:'gr'},{t:'Aftermath',x:'SlowMist confirms Lazarus Group',tp:'gr'}],lo:[{a:'CoinEx hot wallets',m:'$70M',tk:'Multi-chain assets'}],rm:['Store majority in cold wallets','Use HSM for key management','Implement multi-sig','Regular key rotation'],aa:['ETH','BTC','TRX'],av:'Private Key Compromise → Multi-chain Theft',fr:'Partial funds traced and frozen',pr:'Lazarus Group attribution confirmed by SlowMist'},
 
-{sv:'medium',ti:'DeFi Flash Loan Attacks Continue',ds:'Cumulative DeFi protocol losses exceed $80B from flash loan, reentrancy, and oracle attacks',ls:'$80B+ cumulative',ch:'Multi-Chain',tm:'2025 ongoing',
-dt:{ov:'DeFi attack frequency and scale continue rising. Attack methods include flash loans, reentrancy, oracle manipulation, private key leaks, and logic vulnerabilities. On Oct 11 2025 Black Tuesday, BTC dropped 13% in 24h with $19.35B in liquidations.',st:'ongoing',rc:['Logic vulnerabilities and integer overflow in smart contracts','Flash loans provide zero-cost capital for price manipulation','Oracle data sources can be manipulated','Many projects lack professional security audits','DeFi lacks multi-layered security of traditional finance'],tl:[{t:'Oct 11 2025',x:'Black Tuesday: BTC -13%, $19.35B liquidations',tp:'rd'},{t:'Ongoing',x:'DeFi cumulative losses exceed $80B',tp:'rd'},{t:'2025',x:'DeFiTail ML-based detection framework proposed',tp:'gr'},{t:'2025',x:'Industry security audit awareness increasing',tp:'gr'}],lo:[{a:'Various DeFi users',m:'$80B+ cumulative',tk:'Multi-chain assets'}],rm:['Mandatory professional audits before deployment','ML-based real-time contract security detection','Multi-source oracle aggregation','Emergency pause mechanisms and anomaly monitoring','Users should diversify across protocols'],aa:['ETH','BNB','SOL'],av:'Flash Loan / Reentrancy / Oracle Exploit',fr:'Most stolen funds unrecoverable',pr:'Industry calls for stronger security audits and regulatory frameworks'}
-}
+{sv:'medium',ti:'DeFi Flash Loan Attacks Continue',ds:'Cumulative losses exceed $80B from flash loan, reentrancy, and oracle exploits',ls:'$80B+ cumulative',ch:'Multi-Chain',tm:'2025 ongoing',
+dt:{ov:'DeFi attack frequency continues rising with flash loans, reentrancy, oracle manipulation. On Oct 11 2025 Black Tuesday, BTC dropped 13% with $19.35B in liquidations across 1.66M traders.',st:'ongoing',rc:['Logic vulnerabilities and integer overflow in contracts','Flash loans provide zero-cost capital for manipulation','Oracle data sources can be manipulated','Many projects lack professional security audits','DeFi lacks traditional finance security layers'],tl:[{t:'Oct 11 2025',x:'Black Tuesday: BTC -13%, $19.35B liquidations',tp:'rd'},{t:'Ongoing',x:'DeFi cumulative losses exceed $80B',tp:'rd'},{t:'2025',x:'ML-based detection frameworks proposed',tp:'gr'},{t:'2025',x:'Security audit awareness increasing',tp:'gr'}],lo:[{a:'Various DeFi users',m:'$80B+',tk:'Multi-chain'}],rm:['Mandatory audits before deployment','ML-based real-time detection','Multi-source oracle aggregation','Emergency pause mechanisms'],aa:['ETH','BNB','SOL'],av:'Flash Loan / Reentrancy / Oracle Exploit',fr:'Most funds unrecoverable',pr:'Industry calls for stronger security frameworks'}
 ];
 
 function renderIn(){
@@ -263,17 +289,21 @@ function om2(i){
 function cm(ev,id){if(ev&&ev.target!==ev.currentTarget)return;document.getElementById(id).classList.remove('v');document.body.style.overflow=''}
 document.addEventListener('keydown',function(e){if(e.key=='Escape')cm(null,'m2')});
 
-function ft(q){q=q.toLowerCase();document.querySelectorAll('#tableWrap tr').forEach(function(r){r.style.display=r.textContent.toLowerCase().indexOf(q)>-1?'':'none'})}
+function ft(q){q=q.toLowerCase();document.querySelectorAll('#coinWrap tr').forEach(function(r){r.style.display=r.textContent.toLowerCase().indexOf(q)>-1?'':'none'})}
 
 async function loadAll(){
-  var btn=document.getElementById('refreshBtn');btn.disabled=true;btn.textContent='⟳ Loading...';
-  document.getElementById('srcTag').textContent='📡 Fetching live data...';
-  await Promise.all([loadGlobal(),loadCoins(),loadExchanges()]);
+  var btn=document.getElementById('rBtn');btn.disabled=true;btn.textContent='⟳ Loading...';
+  document.getElementById('srcTag').textContent='📡 Fetching...';
+  try{
+    await Promise.all([loadCoins(),loadGlobal(),loadExchanges()]);
+    document.getElementById('srcTag').textContent='📡 CoinCap | Updated '+new Date().toLocaleTimeString();
+  }catch(e){
+    document.getElementById('srcTag').textContent='⚠️ Partial load';
+  }
   btn.disabled=false;btn.textContent='⟳ Refresh';
-  document.getElementById('srcTag').textContent='📡 Data: CoinGecko | Updated '+new Date().toLocaleTimeString();
-  renderIn();
 }
 
+renderIn();
 loadAll();
 setInterval(function(){loadAll()},120000);
 </script>
